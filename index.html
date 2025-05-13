@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educational Excellence Consultancy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">Educational Excellence</div>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Elevating Institutional Excellence</h1>
+        <p>We help educational institutions achieve recognition through strategic guidance and support with rankings and accreditations.</p>
+        <a href="#services" class="btn btn-primary">Explore Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Comprehensive support for institutional recognition and excellence</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- NIRF Service -->
+        <div class="service-card" id="nirf-service">
+          <div class="service-header">
+            <h3>NIRF Ranking Guidance</h3>
+          </div>
+          <div class="service-content">
+            <p>Strategic guidance to improve your institution's standing in the National Institutional Ranking Framework, enhancing visibility and prestige across India.</p>
+            <button class="btn btn-secondary learn-more-btn" data-target="nirf-details">Learn More</button>
+            <div class="service-details" id="nirf-details">
+              <h4>How We Help With NIRF Rankings</h4>
+              <ul>
+                <li>Comprehensive analysis of current institutional metrics</li>
+                <li>Strategic planning for improvement in key NIRF parameters</li>
+                <li>Documentation preparation and submission guidance</li>
+                <li>Data compilation and presentation strategies</li>
+                <li>Post-submission analysis and future planning</li>
+              </ul>
+              <p>Our NIRF ranking specialists have helped over 50 institutions improve their rankings, with an average improvement of 15 positions after just one year of consultation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAA Service -->
+        <div class="service-card" id="caa-service">
+          <div class="service-header">
+            <h3>CAA Accreditation Support</h3>
+          </div>
+          <div class="service-content">
+            <p>Expert guidance through the Commission for Academic Accreditation process, ensuring your institution meets and exceeds accreditation standards.</p>
+            <button class="btn btn-secondary learn-more-btn" data-target="caa-details">Learn More</button>
+            <div class="service-details" id="caa-details">
+              <h4>Our CAA Accreditation Process</h4>
+              <ul>
+                <li>Gap analysis of current institutional practices against CAA standards</li>
+                <li>Development of comprehensive documentation portfolio</li>
+                <li>Preparation for site visits and evaluations</li>
+                <li>Response strategies for preliminary findings</li>
+                <li>Post-accreditation action planning</li>
+              </ul>
+              <p>Our consultants include former CAA evaluators and experienced administrators who understand the nuances of the accreditation process from both sides. We've achieved a 100% success rate for first-time accreditations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- QS Service -->
+        <div class="service-card" id="qs-service">
+          <div class="service-header">
+            <h3>QS Ranking Consulting</h3>
+          </div>
+          <div class="service-content">
+            <p>Specialized consulting to improve your institution's global standing in the prestigious Quacquarelli Symonds World University Rankings.</p>
+            <button class="btn btn-secondary learn-more-btn" data-target="qs-details">Learn More</button>
+            <div class="service-details" id="qs-details">
+              <h4>QS Ranking Excellence Strategy</h4>
+              <ul>
+                <li>Academic reputation enhancement strategies</li>
+                <li>Research output and citation improvement planning</li>
+                <li>International faculty and student ratio optimization</li>
+                <li>Employer reputation building campaigns</li>
+                <li>Data submission and presentation expertise</li>
+              </ul>
+              <p>Our QS ranking consultants have worked with institutions across five continents, helping regional universities break into global rankings for the first time and assisting established institutions in climbing to new heights.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <p>Dedicated to institutional excellence since 2010</p>
+      </div>
+      <div class="about-content">
+        <p>We are a team of experienced education consultants with backgrounds in institutional administration, quality assurance, and academic leadership. Our mission is to help educational institutions showcase their strengths and achieve the recognition they deserve through strategic guidance and support.</p>
+        <p>With over 15 years of combined experience in higher education ranking systems and accreditation processes, we've helped more than 100 institutions across the globe improve their standing and secure prestigious accreditations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Get in touch to discuss how we can support your institution</p>
+      </div>
+      <div class="contact-form-container">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="institution">Institution</label>
+            <input type="text" id="institution" name="institution" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Service of Interest</label>
+            <select id="service" name="service">
+              <option value="nirf">NIRF Ranking Guidance</option>
+              <option value="caa">CAA Accreditation Support</option>
+              <option value="qs">QS Ranking Consulting</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div id="formSuccess" class="form-success">
+          <p>Thank you for your message! We'll be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Educational Excellence</div>
+        <div class="footer-copyright">
+          <p>&copy; 2025 Educational Excellence Consultancy. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
