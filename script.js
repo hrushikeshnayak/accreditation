@@ -59,15 +59,18 @@ document.addEventListener('DOMContentLoaded', function() {
       const targetId = this.getAttribute('href');
       const targetSection = document.querySelector(targetId);
       
-      // Calculate position accounting for fixed navbar
-      const navbarHeight = navbar.offsetHeight;
-      const targetPosition = targetSection.offsetTop - navbarHeight;
-      
-      // Smooth scroll to target
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
+      // Only proceed if target section exists
+      if (targetSection) {
+        // Calculate position accounting for fixed navbar
+        const navbarHeight = navbar.offsetHeight;
+        const targetPosition = targetSection.offsetTop - navbarHeight;
+        
+        // Smooth scroll to target
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
     });
   });
   
