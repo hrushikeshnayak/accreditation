@@ -1,11 +1,11 @@
 :root {
   /* Color Variables */
-  --primary-color: #1a5f7a;
-  --primary-light: #268aa9;
-  --primary-dark: #114355;
-  --secondary-color: #159895;
-  --accent-color: #57c5b6;
-  --accent-light: #b8e1dd;
+  --primary-color: #EF86B4;
+  --primary-light: #f19fc4;
+  --primary-dark: #D62247;
+  --secondary-color: #D62247;
+  --accent-color: #f19fc4;
+  --accent-light: #fce4ee;
   --text-dark: #333333;
   --text-medium: #555555;
   --text-light: #777777;
@@ -20,7 +20,7 @@
   --heading-font: 'Poppins', sans-serif;
   --body-font: 'Open Sans', sans-serif;
   
-  /* Spacing (based on 8px system) */
+  /* Spacing */
   --space-xs: 8px;
   --space-sm: 16px;
   --space-md: 24px;
@@ -80,7 +80,7 @@ h2:after {
   height: 3px;
   bottom: -8px;
   left: 0;
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   border-radius: 2px;
 }
 
@@ -224,7 +224,7 @@ section {
 }
 
 .btn-secondary:hover {
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   color: var(--white);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -237,7 +237,7 @@ section {
   align-items: center;
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
   color: var(--white);
-  padding-top: 80px; /* Account for fixed navbar */
+  padding-top: 80px;
 }
 
 .hero-content {
@@ -336,19 +336,26 @@ section {
   margin-bottom: var(--space-xs);
 }
 
-/* About Section */
-.about-section {
-  background-color: var(--white);
-}
-
-.about-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 /* Contact Section */
 .contact-section {
   background-color: var(--light-bg);
+}
+
+.contact-info {
+  margin-bottom: var(--space-xl);
+}
+
+.contact-details, .global-presence, .office-locations {
+  margin-bottom: var(--space-lg);
+}
+
+.office {
+  margin-bottom: var(--space-md);
+}
+
+.office h4 {
+  color: var(--primary-dark);
+  margin-bottom: var(--space-xs);
 }
 
 .contact-form-container {
