@@ -297,12 +297,12 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.1) 100%);
+  background: url('https://images.pexels.com/photos/2088170/pexels-photo-2088170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover;;
   z-index: 1;
 }
 
 .service-header h3 {
-  color: var(--white);
+  color: var(--secondary-color);
   margin-bottom: 0;
   position: relative;
   z-index: 2;
